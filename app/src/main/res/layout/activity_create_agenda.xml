@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".CreateAgenda">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:id="@+id/title_inputT">
+
+        <EditText
+            android:id="@+id/title_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimaryDark"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:id="@+id/date_inputT">
+
+        <!--<EditText
+            android:id="@+id/date_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:inputType="date"
+            android:maxLines="1"
+            android:singleLine="true" android:textColorHint="@color/colorPrimaryDark"
+            />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_input"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:onClick="setDate"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+   <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setDate"
+        android:text="SET DATE"/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:id="@+id/time_inputT"
+        >
+
+      <!--  <EditText
+            android:id="@+id/time_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time"
+            android:inputType="time"
+            android:maxLines="1"
+            android:singleLine="true" android:textColorHint="@color/colorPrimaryDark"
+            />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_input"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:onClick="setDate"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:id="@+id/location_inputT"
+        >
+
+        <EditText
+            android:id="@+id/location_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" android:textColorHint="@color/colorPrimaryDark"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:id="@+id/action_items_inputT"
+        >
+
+        <EditText
+            android:id="@+id/action_items_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Action Items"
+            android:inputType="text"
+            android:textColorHint="@color/colorPrimaryDark"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:layout_below="@id/export_meeting"
+        android:layout_marginTop="5dp"
+        android:text="CREATE AGENDA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:id="@+id/butn_create_agenda"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+</LinearLayout>
